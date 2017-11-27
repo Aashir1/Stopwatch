@@ -17,7 +17,7 @@ export class StopWatch extends React.Component{
     start = () =>{
         console.log(this);
         clearInterval(this.timeInterval);
-        this.timeInterval = setInterval(()=>{this.functionWillExe()}, 15)
+        this.timeInterval = setInterval(()=>{this.functionWillExe()}, 15)//<<<<<<<< (this.timeInterval) ?
     }
     functionWillExe = ()=>{
 
